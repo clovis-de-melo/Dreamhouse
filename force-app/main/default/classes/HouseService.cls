@@ -10,6 +10,7 @@ public with sharing class HouseService {
         ORDER BY CreatedDate
         LIMIT 10
       ];
+      // Return records from the house object
       return lstHouses;
     }
     // Code to handle exception
