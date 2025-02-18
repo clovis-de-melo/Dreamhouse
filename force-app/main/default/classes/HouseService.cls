@@ -1,5 +1,5 @@
 public with sharing class HouseService {
-  // @AuraEnabled allows this class to be accessible from lightning web components
+  // @AuraEnabled(cacheable=true) allows this class to be accessible from lightning Web Components
   @AuraEnabled(cacheable=true)
   public static List<House__c> getRecords() {
     try {
